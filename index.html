@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>ADMIN - Transaction List</h1>
+
+    <div class="content">
+
+        <ul id="transaction-list"></ul>
+
+    </div>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB1yqXM97DlJnIKtLLnRZ2P5x72HGqJNKI",
+            authDomain: "cardinal-plus-d1a8b.firebaseapp.com",
+            databaseURL: "https://cardinal-plus-d1a8b.firebaseio.com",
+            projectId: "cardinal-plus-d1a8b",
+            storageBucket: "cardinal-plus-d1a8b.appspot.com",
+            messagingSenderId: "122250334563",
+            appId: "1:122250334563:web:fb6024bae37e5df7a0c356",
+            measurementId: "G-04VY52FJV0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
